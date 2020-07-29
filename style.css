@@ -72,3 +72,22 @@ ul {
 .main-nav .logo {
   width: 110px;
 }
+
+/*----------------------------------------------------------------------------*/
+/*--------------------------------- Button -----------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: var(--primary-color);
+  background: var(--secondary-color);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}

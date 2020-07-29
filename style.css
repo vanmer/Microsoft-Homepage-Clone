@@ -1,0 +1,31 @@
+/*----------------------------------------------------------------------------*/
+/*----------------------------- Global Styling -------------------------------*/
+/*----------------------------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", "Tahoma", "Verdana", sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  color: #262626;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}

@@ -6,6 +6,8 @@
   --secondary-color: #262626;
   --third-color: #000;
   --fourth-color: #0067b8;
+  --fifth-color: #333;
+  --sixth-color: #f4f4f4;
 }
 
 * {
@@ -92,6 +94,15 @@ ul {
   opacity: 0.9;
 }
 
+.dark {
+  color: var(--primary-color);
+}
+
+.dark .btn {
+  color: var(--fifth-color);
+  background: var(--sixth-color);
+}
+
 /*----------------------------------------------------------------------------*/
 /*--------------------------------- Showcase ---------------------------------*/
 /*----------------------------------------------------------------------------*/
@@ -163,5 +174,24 @@ ul {
 }
 
 .advertising p {
+  margin: 10px 0 20px;
+}
+
+/*----------------------------------------------------------------------------*/
+/*-------------------------------- Explore -----------------------------------*/
+/*----------------------------------------------------------------------------*/
+.explore {
+  width: 100%;
+  height: 350px;
+  background: url('./img/carbon.jpg') no-repeat center center/cover;
+  margin-bottom: 20px;
+}
+
+.explore .content {
+  width: 55%;
+  padding: 100px 0 0 30px;
+}
+
+.explore p {
   margin: 10px 0 20px;
 }

@@ -192,7 +192,7 @@ ul {
 
 .explore .content {
   width: 55%;
-  padding: 6.25rem 0 0 1.875;
+  padding: 6.25rem 0 0 1.875rem;
 }
 
 .explore p {
@@ -223,4 +223,21 @@ ul {
 .links {
   background: var(--seventh-color);
   color: var(--eightth-color);
+  font-size: 0.75rem;
+  padding: 2.1875rem 0;
+}
+
+.links-inner {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.625rem;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1100px;
+  padding: 0 1.25rem;
+  margin: 0 auto;
+}
+
+.links li {
+  line-height: 2.8;
 }

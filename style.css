@@ -8,6 +8,8 @@
   --fourth-color: #0067b8;
   --fifth-color: #333;
   --sixth-color: #f4f4f4;
+  --seventh-color: #f2f2f2;
+  --eightth-color: #616161;
 }
 
 * {
@@ -47,7 +49,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   font-size: 0.8rem;
 }
 
@@ -56,7 +58,7 @@ ul {
 }
 
 .main-nav ul li {
-  padding: 0 10px;
+  padding: 0 0.625em;
 }
 
 .main-nav ul li a {
@@ -69,11 +71,12 @@ ul {
 
 .main-nav .main-menu {
   flex: 1;
-  margin-left: 20px;
+  margin-left: 0 0.625rem;
 }
 
 .main-nav .logo {
   width: 110px;
+  margin-right: 1.25rem;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -85,7 +88,7 @@ ul {
   border: 0;
   font-size: 1rem;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   color: var(--primary-color);
   background: var(--secondary-color);
 }
@@ -115,16 +118,16 @@ ul {
   align-items: center;
   text-align: center;
   justify-content: flex-end;
-  padding-bottom: 50px;
-  margin-bottom: 20px;
+  padding-bottom: 3.125rem;
+  margin-bottom: 1.25rem;
 }
 
 .showcase h2, .showcase p {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .showcase .btn {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -133,29 +136,29 @@ ul {
 .home-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  margin-bottom: 40px;
+  grid-gap: 1.25rem;
+  margin-bottom: 2.5rem;
 }
 
 .home-cards img {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .home-cards h3 {
-  margin-bottom: 5px;
+  margin-bottom: 0.2rem;
 }
 
 .home-cards a {
   display: inline-block;
-  padding-top: 10px;
+  padding-top: 0.625rem;
   color: var(--fourth-color);
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .home-cards a:hover i {
-  margin-left: 10px;
+  margin-left: 0.625rem;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -165,7 +168,7 @@ ul {
   width: 100%;
   height: 350px;
   background: url('./img/xbox.png') no-repeat center center/cover;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .advertising .content {
@@ -184,16 +187,16 @@ ul {
   width: 100%;
   height: 350px;
   background: url('./img/carbon.jpg') no-repeat center center/cover;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .explore .content {
   width: 55%;
-  padding: 100px 0 0 30px;
+  padding: 6.25rem 0 0 1.875;
 }
 
 .explore p {
-  margin: 10px 0 20px;
+  margin: 0.625rem 0 1.25rem;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -207,9 +210,17 @@ ul {
 }
 
 .follow * {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .follow i {
   font-size: 1.6rem;
+}
+
+/*----------------------------------------------------------------------------*/
+/*-------------------------------- Links -------------------------------------*/
+/*----------------------------------------------------------------------------*/
+.links {
+  background: var(--seventh-color);
+  color: var(--eightth-color);
 }

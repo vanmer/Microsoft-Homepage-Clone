@@ -22,7 +22,7 @@ body {
   font-family: "Segoe UI", "Tahoma", "Verdana", sans-serif;
   background: var(--primary-color);
   color: var(--third-color);
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
 }
 
@@ -44,6 +44,17 @@ ul {
 /*----------------------------------------------------------------------------*/
 /*------------------------------- Navigation ---------------------------------*/
 /*----------------------------------------------------------------------------*/
+.menu-btn {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 1.25rem;
+  left: 1.6rem;
+  z-index: 20;
+}
+.menu-btn i {
+  font-size: 1.23rem;
+}
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -77,6 +88,10 @@ ul {
 .main-nav .logo {
   width: 110px;
   margin-right: 1.25rem;
+}
+
+.main-nav i {
+  font-size: 1rem;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -120,6 +135,7 @@ ul {
   justify-content: flex-end;
   padding-bottom: 3.125rem;
   margin-bottom: 1.25rem;
+  z-index: 10;
 }
 
 .showcase h2, .showcase p {
@@ -223,7 +239,7 @@ ul {
 .links {
   background: var(--seventh-color);
   color: var(--eightth-color);
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   padding: 2.1875rem 0;
 }
 
@@ -248,27 +264,27 @@ ul {
 .footer {
   background: #f2f2f2;
   color: #616161;
-  font-size: 12px;
-  padding: 20px 0;
+  font-size: 0.66rem;
+  padding: 1.25rem 0;
 }
 
 .footer-inner {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 20px 0 20px;
+  padding: 0 1.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .footer .country {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   display: flex;
   align-items: center;
 }
 
 .footer .country i {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .footer ul {
@@ -277,6 +293,87 @@ ul {
 }
 
 .footer li {
-  margin-right: 30px;
-  margin-bottom: 20px;
+  margin-right: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+
+/*----------------------------------------------------------------------------*/
+/*------------------------------ Media Queries -------------------------------*/
+/*----------------------------------------------------------------------------*/
+@media(max-width: 1080px) {
+  .home-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .advertising h2 {
+    margin-bottom: 1.25rem;
+  }
+  .showcase, .explore {
+    width: 110vw;
+    transform: translateX(-10%);
+  }
+  .explore .content {
+    width: 55%;
+    padding: 6.25rem 0 0 4.5rem;
+    width: 85%;
+  }
+  .links {
+    padding: 2.1875rem 1.6rem;
+  }
+  .links .links-inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer {
+    padding: 0 1.6rem;
+  }
+  .footer-inner {
+    display: block;
+
+  }
+  .footer ul {
+    margin-top: -0.5rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media(max-width: 600px) {
+  .menu-btn {
+    display: block;
+  }
+  .menu-btn:hover {
+    opacity: 0.9;
+  }
+  .main-nav ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--seventh-color);
+    width: 100%;
+    height: auto;
+    z-index: 20;
+    transform: translateX(-500rem);
+    margin-top: 60px;
+  }
+  .main-nav ul.main-menu li {
+    padding: 1rem 1rem 1rem 2rem;
+    border-bottom: 1px solid var(--fifth-color);
+  }
+  .main-nav ul.main-menu.show {
+    transform: translateX(0);
+  }
+  .main-nav .logo {
+    margin: 0 auto;
+  }
+  .home-cards {
+    grid-template-columns: 1fr;
+  }
+  .advertising p {
+    display: none;
+  }
+  .links .links-inner {
+    grid-template-columns: 1fr;
+  }
+  .footer ul li {
+    margin-bottom: 0.5rem;
+  }
 }

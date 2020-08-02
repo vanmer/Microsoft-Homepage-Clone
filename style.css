@@ -314,14 +314,10 @@ ul {
     transform: translateX(-10%);
   }
   .advertising .content {
-    width: 55%;
-    padding: 6.25rem 0 0 4.5rem;
-    width: 85%;
+    padding: 2rem 0 0 7rem;
   }
   .explore .content {
-    width: 55%;
-    padding: 6.25rem 0 0 4.5rem;
-    width: 85%;
+    padding: 5rem 0 0 7rem;
   }
   .links {
     padding: 2.1875rem 1.6rem;
@@ -382,7 +378,11 @@ ul {
     display: none;
   }
   .advertising .content {
+    padding: 3.5rem 0 0 4.5rem;
     font-size: 0.8rem;
+  }
+  .explore .content {
+    padding: 3.5rem 0 0 4.5rem;
   }
 
   .links .links-inner {
